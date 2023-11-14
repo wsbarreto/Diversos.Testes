@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.API.Seguro", "Teste.Seguro.API\Teste.Seguro.API.Seguro.csproj", "{9B6CC542-43F5-4C3B-852D-AE0F4C4CBAB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.API.Seguro", "src\Teste.Seguro.API\Teste.Seguro.API.Seguro.csproj", "{9B6CC542-43F5-4C3B-852D-AE0F4C4CBAB7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teste", "Teste", "{69CFA638-F7F4-48D5-B172-952A73B6F83D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.Test", "Teste.Seguro.Test\Teste.Seguro.Test.csproj", "{D9BF42F8-813C-4A2C-8ACD-63A30B63FD9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.Test", "src\Teste.Seguro.Test\Teste.Seguro.Test.csproj", "{D9BF42F8-813C-4A2C-8ACD-63A30B63FD9C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{9C225896-5BDD-43AD-84BC-5515F00CE6C7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.Domain", "Teste.Seguro.Domain\Teste.Seguro.Domain.csproj", "{CD91B68C-7B1E-41EC-A974-ECBBF4245ED3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.Domain", "src\Teste.Seguro.Domain\Teste.Seguro.Domain.csproj", "{CD91B68C-7B1E-41EC-A974-ECBBF4245ED3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{5906F2C6-76BE-4523-B9E9-9E391C5591C2}"
 EndProject
@@ -23,19 +23,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{C6F90589-5C5D-4351-8ACC-D71EC5C584CD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.Data", "Teste.Seguro.Data\Teste.Seguro.Data.csproj", "{76DC0056-9F7D-4380-959D-3FCB674423BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.Data", "src\Teste.Seguro.Data\Teste.Seguro.Data.csproj", "{76DC0056-9F7D-4380-959D-3FCB674423BB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.CrossCutting", "Teste.Seguro.CrossCutting\Teste.Seguro.CrossCutting.csproj", "{6FE0DCD1-E55C-46D1-9FDF-1A6CC63C27B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.CrossCutting", "src\Teste.Seguro.CrossCutting\Teste.Seguro.CrossCutting.csproj", "{6FE0DCD1-E55C-46D1-9FDF-1A6CC63C27B8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.Service", "Teste.Seguro.Service\Teste.Seguro.Service.csproj", "{82B34A7A-7480-450B-B246-5601942E6EE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.Service", "src\Teste.Seguro.Service\Teste.Seguro.Service.csproj", "{82B34A7A-7480-450B-B246-5601942E6EE9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.Web", "Teste.Seguro.Web\Teste.Seguro.Web.csproj", "{4C3678AA-B3D5-48BA-BC40-09489FDA55B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.Web", "src\Teste.Seguro.Web\Teste.Seguro.Web.csproj", "{4C3678AA-B3D5-48BA-BC40-09489FDA55B4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.API.Seguradora", "Teste.Seguro.API.Seguradora\Teste.Seguro.API.Seguradora.csproj", "{7D3B691C-8D47-45D3-BA2B-180BF02DCC36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.API.Seguradora", "src\Teste.Seguro.API.Seguradora\Teste.Seguro.API.Seguradora.csproj", "{7D3B691C-8D47-45D3-BA2B-180BF02DCC36}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.App", "Teste.Seguro.App\Teste.Seguro.App.csproj", "{E3EDD560-DA45-4B43-A71C-51BABADC95CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Seguro.App", "src\Teste.Seguro.App\Teste.Seguro.App.csproj", "{E3EDD560-DA45-4B43-A71C-51BABADC95CA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.SEguro.Angular", "Teste.SEguro.Angular\Teste.SEguro.Angular.csproj", "{BDA449AB-94AA-4527-BB70-6F32F84DACAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.SEguro.Angular", "src\Teste.SEguro.Angular\Teste.SEguro.Angular.csproj", "{BDA449AB-94AA-4527-BB70-6F32F84DACAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
