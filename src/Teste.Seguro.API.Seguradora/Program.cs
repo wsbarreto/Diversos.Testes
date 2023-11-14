@@ -7,10 +7,7 @@ using Teste.Seguro.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var env = builder.Environment;
-
 builder.Services.AddCors();
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
@@ -25,15 +22,12 @@ builder.Services.AddScoped<ISeguradoraRepository, SeguradoraRepository>();
 builder.Services.AddScoped<IVeiculoService, VeiculoService>();
 builder.Services.AddScoped<IVeiculoRepository, VeiculoRepository>();
 
-//builder.Services.AddDbContext<DataContext>(w => w.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings")["connectionString"]));
-
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings")["connectionString"]);
 });
 
 var app = builder.Build();
-
 if (app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/errors");

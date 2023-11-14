@@ -7,16 +7,14 @@ using Teste.Seguro.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+var env = builder.Environment;
 
-builder.Services.AddControllers();
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddCors();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
-// injection dependency
+// DI
 builder.Services.AddScoped<ISeguroService, SeguroService>();
 builder.Services.AddScoped<ISeguroRepository, SeguroRepository>();
 builder.Services.AddScoped<ISeguradoService, SeguradoService>();
@@ -26,23 +24,28 @@ builder.Services.AddScoped<ISeguradoraRepository, SeguradoraRepository>();
 builder.Services.AddScoped<IVeiculoService, VeiculoService>();
 builder.Services.AddScoped<IVeiculoRepository, VeiculoRepository>();
 
-
-
-builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer("connectionString"));
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings")["connectionString"]);
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseExceptionHandler("/errors");
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+app.UseCors(x => x
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader());
+
+app.MapControllers();
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
