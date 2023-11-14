@@ -49,7 +49,8 @@ public class SeguroController : ControllerBase
         var premioRisco = taxaRisco * valorVeiculo;
         var premioPuro = premioRisco * (1 + margem_seguranca);
         var premioComercial = lucro * premioPuro;
-        return Ok((premioComercial + premioPuro).ToString("N", setPrecision));
+        Decimal valorSeguro = (premioComercial + premioPuro);
+        return Ok(valorSeguro);
 
         //return new JsonResult(Execute(() => this._baseSeguroService.CalcularSeguroAsync(seguro)));
     }
